@@ -28,7 +28,7 @@ module.exports = function (grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: './dist/gCodeViewer/win64/',
+                    cwd: './dist/gcodeviewer2/win64/',
                     src: ['**/*'],
                     dest: '/gCodeViewer-gui'
                 }]
