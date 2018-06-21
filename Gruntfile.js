@@ -21,11 +21,11 @@ module.exports = function (grunt) {
         compress: {
             win: {
                 options: {
-                    archive: './dist/win.zip'
+                    archive: './dist/gCodeViewer-win.zip'
                 },
                 files: [{
                     expand: true,
-                    cwd: './dist/svgo-gui/win64/',
+                    cwd: './dist/gCodeViewer/win64/',
                     src: ['**/*'],
                     dest: '/gCodeViewer-gui'
                 }]
