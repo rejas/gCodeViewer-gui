@@ -1,7 +1,7 @@
 {
   "name": "gcodeviewer-gui",
   "version": "0.0.1",
-  "description": " app wrapper around gCodeViewer, currently using nw.js, maybe electron later ",
+  "description": "app wrapper around gCodeViewer, currently using nw.js, maybe electron later",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
