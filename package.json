@@ -1,13 +1,16 @@
 {
   "name": "gcodeviewer-gui",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": " app wrapper around gCodeViewer, currently using nw.js, maybe electron later ",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "rejas",
+    "url": "https://github.com/rejas"
+  },
+  "repository": "https://github.com/rejas/gCodeViewer-gui.git",
+  "license": "MIT",
   "dependencies": {
     "grunt": "^1.0.3",
     "grunt-contrib-compress": "^1.4.3",
