@@ -8,19 +8,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-nw-builder');
 
     grunt.initConfig({
-        nwjs: {
-            options: {
-                buildDir: './dist',
-                flavor: 'normal',
-                platforms: ['win64'],
-                version: 'latest',
-                zip: true
-            },
-            files: {
-                dot: true,
-                src: ['./gCodeViewer/**/*']
-            }
-        },
         compress: {
             win: {
                 options: {
@@ -35,11 +22,26 @@ module.exports = function (grunt) {
             }
         },
         makensis: {
+            win: {
+                options: {
+                    srcDir: 'dist\\gcodeviewer2\\win64\\',
+                    buildDir: './dist',
+                    appName: 'gCodeViewer',
+                    setupName: '_installer'
+                }
+            }
+        },
+        nwjs: {
             options: {
-                srcDir: './dist/gCodeViewer/win64/',
-                buildDir: './dist/gCodeViewer/exe/',
-                appName: 'gCodeViewer',
-                setupName: '_installer'
+                buildDir: './dist',
+                flavor: 'normal',
+                platforms: ['win64'],
+                version: 'latest',
+                zip: true
+            },
+            files: {
+                dot: true,
+                src: ['./gCodeViewer/**/*']
             }
         }
     });
