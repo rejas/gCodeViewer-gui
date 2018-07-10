@@ -24,7 +24,7 @@ module.exports = function (grunt) {
         makensis: {
             win: {
                 options: {
-                    srcDir: 'dist\\gcodeviewer2\\win64\\',
+                    srcDir: 'dist\\gcodeviewer2\\win64',
                     buildDir: './dist',
                     appName: 'gCodeViewer',
                     setupName: '_installer'
@@ -46,7 +46,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('exe', [
+    grunt.registerTask('default', [
         'nwjs',
         'makensis'
     ]);
